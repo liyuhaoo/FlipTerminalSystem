@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.flx.view.RevealLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:custome="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/revealLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <include
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        layout="@layout/result_check_in" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/blue"
+        android:orientation="vertical" >
+
+        <TextView
+            android:id="@+id/name_tv"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="李羽皓"
+            android:textSize="80px" />
+
+        <!--
+        <LinearLayout
+            android:id="@+id/lamp_ll"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:paddingBottom="50px" >
+
+            <ImageView 
+                android:id="@+id/lamp"
+                style="@style/MyLamp"/>
+            <com.flx.view.RippleView
+                android:id="@+id/rippleView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                custome:rv_color="@color/white"
+                custome:rv_rippleDuration="300">
+
+                <Button
+                    android:id="@+id/btn_check_in"
+                    style="@style/MyButton"
+                    android:background="@drawable/key_check_in"
+                    android:text="签到" />
+            </com.flx.view.RippleView>
+        </LinearLayout>
+        -->
+
+        <RelativeLayout
+            android:layout_width="160px"
+            android:layout_height="160px"
+            android:layout_gravity="center_horizontal">
+
+            <com.flx.view.RadarLayout
+                android:id="@+id/radarLayout"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" />
+
+            <com.flx.view.RippleView
+                android:id="@+id/rippleView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                custome:rv_color="@color/white"
+                custome:rv_rippleDuration="200" >
+
+                <Button
+                    android:id="@+id/btn_check_in"
+                    style="@style/MyButton"
+                    android:background="@drawable/key_check_in"
+                    android:text="签到" />
+            </com.flx.view.RippleView>
+        </RelativeLayout>
+    </LinearLayout>
+
+</com.flx.view.RevealLayout>

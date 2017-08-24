@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- 透明色 -->
+    <color name="transparent">#00000000</color>
+    <!-- 白色 -->
+    <color name="white">#FFFFFF</color>
+    <!-- 蓝色 -->
+    <color name="blue">#008dfa</color>
+
+    
+   <!-- 应用的主色调 -->
+    <color name="darker_blue">#00BCDB</color>
+    <!-- 应用的主色调的按动效果 -->
+    <color name="darker_green">#16ED9F</color> 
+    
+    
+    
+    <!-- 发言键：浅绿 -->
+    <color name="light_green">#7B9F87</color>
+    <!-- 赞成键：暗绿 -->
+    <color name="dark_green">#5CA175</color>
+    <!-- 反对键：暗红 -->
+    <color name="dark_red">#D03E49</color>
+    <!-- 弃权键：暗黄 -->
+    <color name="dark_yellow">#F5CC01</color>
+    <!-- 报到键：暗蓝 -->
+    <color name="dark_blue">#5C7D98</color>
+
+</resources>

@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/titleBar"
+    android:layout_width="match_parent"
+    android:layout_height="60px"
+    android:minHeight="60px"
+    android:background="@color/blue">
+
+    <ImageView
+        android:id="@+id/toggle_imageview"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="10px"
+        android:background="@drawable/ic_launcher"
+        android:visibility="gone" />
+
+    <TextView
+        android:id="@+id/title_tv"
+        android:layout_width="400px"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:ellipsize="marquee"
+        android:focusable="true"
+        android:focusableInTouchMode="true"
+        android:gravity="center"
+        android:marqueeRepeatLimit="marquee_forever"
+        android:scrollHorizontally="true"
+        android:singleLine="true"
+        android:text="@string/title" />
+
+    <Button
+        android:id="@+id/btn_opt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:padding="10px"
+        android:layout_marginRight="20px"
+        android:textColor="@color/white"
+        android:text="可选按钮"
+        android:visibility="gone"
+        android:textSize="20px"
+        android:background="@drawable/selector_shap_rectangle_button"/>
+
+     <View
+         android:id="@+id/divider"
+        android:layout_width="match_parent"
+        android:layout_height="1.5px"
+        android:background="@color/white" 
+        android:layout_marginLeft="10px"
+        android:layout_marginRight="10px"
+        android:layout_alignParentBottom="true"/>
+</RelativeLayout>
